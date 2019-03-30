@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <title>ighigh.com</title>
 </head>
-<script charset="Shift_JIS"
-        src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js">
+<style>
+    body {background-image:url(/dist/images/bgImg.jpg); background-repeat:repeat-y}
+</style>
+<script type="text/javascript" charset="utf-8">
+    function date() {
+        var week = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+        var localToday = '';
+        var d = new Date();
+        var localToday = d.getFullYear() + "年" + (d.getMonth() + 1) + "月" + d.getDate() + "日";
+        document.getElementById('today').innerHTML = "today：" + localToday + "&nbsp;&nbsp;&nbsp;&nbsp;" + week[d.getDay()];
+    }
+    window.onload=function(){
+        date();
+    }
 </script>
 <body>
+<div>
+    <span id="today" ></span>
+</div>
+<div>
+    <embed wmode="transparent" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf"
+           quality="high" bgcolor="#ffffff" width="160" height="70" name="honehoneclock" align="middle"
+           allowscriptaccess="always" type="application/x-shockwave-flash"
+           pluginspage="http://www.macromedia.com/go/getflashplayer">
+</div>
 <div>
     <object type="application/x-shockwave-flash"
             style="outline:none;"
