@@ -7,26 +7,26 @@
     <link rel="icon" href="dist/images/H.ico" type="image/x-icon"/>
 </head>
 <script>
-    window.onload=function(){
-        var imgUrl = "http://ighigh.com/dist/images/";
-        var imgs =["q.png", "qa.png"];    //（设定想要显示的图片）
-        var i = 0;
-        var head=document.getElementById("bgImg");//获取DIV对象
-        head.style.background="url("+imgUrl+"q.png)";   //设置图片的初始图片为该路径的图片
-        function time(){
-            i++;
-            i=i%2;         // 超过2则取余数，保证循环在0、1、2之间
-            head.style.background="url("+imgUrl+imgs[i]+")";
-
-        }
-        setInterval(time,5000);//循环调用time1()函数，时间间隔为3000ms
-        //setInterval()函数，按照指定的周期（按毫秒计）来调用函数或表达式
-    }
+    // window.onload=function(){
+    //     var imgUrl = "http://ighigh.com/dist/images/";
+    //     var imgs =["q.png","qa.png"];    //（设定想要显示的图片）
+    //     var i = 0;
+    //     var head=document.getElementById("bgImg");//获取DIV对象
+    //     //head.style.background="url("+imgUrl+"q.png)";   //设置图片的初始图片为该路径的图片
+    //     function time(){
+    //         i++;
+    //         i=i%2;         // 超过2则取余数，保证循环在0、1、2之间
+    //         head.style.background="url("+imgUrl+imgs[i]+")";
+    //
+    //     }
+    //     setInterval(time,10000);//循环调用time1()函数，时间间隔为3000ms
+    //     //setInterval()函数，按照指定的周期（按毫秒计）来调用函数或表达式
+    // }
 </script>
-<body>
+<body id="bgImg">
 <h3>《天龙八部》</h3>
 <h4>我本来是突发奇想，想看一下阿朱和阿紫与乔峰</h4>
-<div id="bgImg"></div>
+<h4>说实话，我对着这些剧未曾仔细看过。</h4>
 <div class="ji-tab-content js-tab-content stui-pannel_bd col-pd">
     <div class="num-tab-main js-tab g-clear stui-content__playlist column10 clearfix">
         <li id="player-740-1-1"><a href="https://www.aiqiyivip.cc/v/740-1-1.html">第1集</a></li>
@@ -75,6 +75,12 @@
         <li id="player-740-1-44"><a href="https://www.aiqiyivip.cc/v/740-1-44.html">第44集</a></li>
         <li id="player-740-1-45"><a href="https://www.aiqiyivip.cc/v/740-1-45.html">第45集</a></li>
     </div>
+</div>
+<div>
+    <br>
+    <a href="https://www.zhihu.com/question/21850009">乔峰为什么会爱上阿朱？</a>
+    <br>
+    <a href="https://www.zhihu.com/question/28002046">如何评价《天龙八部》里的乔峰？</a>
 </div>
 </body>
 </html>
