@@ -6,14 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ighigh.com</title>
 <!--必要-->
-<link rel="icon" href="dist/images/H.ico" type="image/x-icon" />
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="dist/styles/Vidage.css" />
-<link rel="stylesheet" href="css/ionicons.min.css">
-<link href="dist/mfb.css" rel="stylesheet">
-<!--[if IE]>
-	<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
-<![endif]-->
+<link rel="icon" target="_blank" href ="dist/images/H.ico" type="image/x-icon" />
+<link rel="stylesheet" target="_blank" href ="css/style.css">
+<link rel="stylesheet" target="_blank" href ="dist/styles/Vidage.css" />
+<link rel="stylesheet" target="_blank" href ="css/ionicons.min.css">
+<link target="_blank" href ="dist/mfb.css" rel="stylesheet">
+	<!--视频-->
+<link target="_blank" href ="http://vjs.zencdn.net/5.0.2/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
+<script src="http://vjs.zencdn.net/5.0.2/video.js"></script>
 <style>
 .cs{
 	text-align:center;
@@ -23,89 +24,51 @@
 .cs h3{
 color:rgba(3, 169, 244, 0.41);
 }
-img#logo {
-    width: 128px;
-    background-size: cover;
-    border-radius: 200px;
-    box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.72);
-    border: 3px solid #00a0ff;
-    opacity: 1;
-    margin: 0 auto;
-    margin-top: 20px;
-	margin-bottom: 20px;
-	transition: all 1.0s;  
-}
-#logo:hover {
-    box-shadow: 0 0 10px #fff;
-    -webkit-box-shadow: 0 0 19px #fff;
-    transform:rotate(360deg);
-    -ms-transform:rotate(360deg); 	/* IE 9 */
-    -moz-transform:rotate(360deg); 	/* Firefox */
-    -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
-    -o-transform:rotate(360deg); 	/* Opera */
-    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
 </style>
 </head>
 <body>
-<!-- Vidage sample structure -->
-	<div class="Vidage">
-		<div class="Vidage__image"></div>
-		<!--<video id="VidageVideo" class="Vidage__video" preload="metadata" loop autoplay muted>-->
-		<!--&lt;!&ndash;	<source src="http://2015107-10008002.cos.myqcloud.com/xingkong.webm" type="video/webm">  &ndash;&gt;-->
-			<!--<source src="videos/bg.mp4" type="video/mp4">-->
-		<!--</video>-->
-	</div>
 <div class="cs">
 	<!-- Demo container -->
-	<img src="dist/images/touxiang.jpg" id="logo"/>
-	<h1>touch me</h1>
+	<h1>这个世界需要改变！</h1>
 	<br><br>
-	<h3>touch my heart</h3>
+	<h3>当优秀成为一种习惯，我便成了你</h3>
 	<br><br>
-	<a href="https://me.csdn.net/Jerry_F_W"><button class="btn-6">CSDN</button></a>
-	<a href="http://weibo.com/2472998731/"><button class="btn-7">新浪微博</button></a>
-	<a href="./runningTime.html"><button class="btn-2">Running Time</button></a>
-	<a href="./games.html"><button class="btn-3">answer me</button></a>
-	<a href="./movies.html"><button class="btn-3">entertainment</button></a>
+	<div>
+		<video  controls="controls" controlsList="nodownload" preload="auto" width="800" height="300" name="media">
+			<source src="https://pc.tedcdn.com/talk/stream/2013G/Blank/RaffaelloDAndrea_2013G-1500k.mp4" type="video/mp4">
+		</video>
+	</div>
+	<br><br>
+	<a target="_blank" href ="https://www.ted.com/"><button class="btn-6">TED:Ideas worth spreading</button></a>
+	<a target="_blank" href ="http://www.khanacademy.org/ "><button class="btn-7">可汗学院</button></a>
+	<a target="_blank" href ="https://www.vocabvideos.com/"><button class="btn-2">SAT视频</button></a>
 	<br>
-	<a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=wxgk20h3">
+	<a target="_blank" href ="https://www.edx.org/"><button class="btn-3">EDX:哈佛麻省理工学院开放平台</button></a>
+	<a target="_blank" href ="http://www.zefrank.com/scribbler/scribblertoo/"><button class="btn-3">思维画板</button></a>
+	<br>
+	<a target="_blank" href ="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=wxgk20h3">
 		<button class="btn-7">阿里云产品优惠券传送门</button>
 	</a>
 </div>
-<!-- Vidage init -->
-	<script src="dist/scripts/Vidage.min.js"></script>
-	<!--<script>-->
-		<!--new Vidage('#VidageVideo');-->
-	<!--</script>-->
 <ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
   <li class="mfb-component__wrap">
-	<a href="#" class="mfb-component__button--main">
+	<a target="_blank" href ="#" class="mfb-component__button--main">
 	  <i class="mfb-component__main-icon--resting ion-plus-round"></i>
 	  <i class="mfb-component__main-icon--active ion-close-round"></i>
 	</a>
 	<ul class="mfb-component__list">
 	  <li>
-		<a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1757892666" data-mfb-label="和我联系" class="mfb-component__button--child">
-		  <i class="mfb-component__child-icon ion-social-twitch"></i>
+		<a target="_blank" href ="highSchool.html" data-mfb-label="高校联盟" class="mfb-component__button--child">
+		  <i class="mfb-component__child-icon ion-ios-star"></i>
 		</a>
 	  </li>
 	  <li>
-		<a href="http://music.163.com/m/user/home?id=379584998" data-mfb-label="netease" class="mfb-component__button--child">
-		  <i class="mfb-component__child-icon ion-ios-musical-note"></i>
-		</a>
-	  </li>
-
-	  <li>
-		<a href="#" data-mfb-label="1757892666" class="mfb-component__button--child">
-		  <i class="mfb-component__child-icon ion-android-people"></i>
+		<a target="_blank" href ="others.html" data-mfb-label="其他" class="mfb-component__button--child">
+		  <i class="mfb-component__child-icon ion-xbox"></i>
 		</a>
 	  </li>
 	</ul>
   </li>
 </ul>
-<audio autoplay="autoplay" loop="true">
-<source src="./audios/wan.mp3" type="audio/mpeg">
-</audio>
 </body>
 </html>
