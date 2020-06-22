@@ -1,2 +1,2 @@
-# wjiany.github.io
+# lumstar.github.io
 welcome to my home！
