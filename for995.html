@@ -30,6 +30,21 @@
         }
     </style>
 </head>
+    <script>
+
+window.onload=function(){ 
+        // 初始化内容 
+    setInterval(function(){ 
+    var els =document.getElementByName("titleName");
+        if(els.value){
+            els.style.display = "block"
+        }else{
+            els.style.display = "none"
+        }
+    }, 1000);
+    }
+
+</script>
 <body>
 <div class="cs">
     <h3>张雪丽专属的硕士论文生成器哈哈哈哈</h3>
