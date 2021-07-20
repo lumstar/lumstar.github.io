@@ -36,10 +36,11 @@ window.onload=function(){
         // 初始化内容 
     setInterval(function(){ 
     var els =document.getElementByName("titleName");
+        var lockName =document.getElementByName("lockName");
         if(els.value){
-            els.style.display = "block"
+            lockName.style.display = "block"
         }else{
-            els.style.display = "none"
+            lockName.style.display = "none"
         }
     }, 1000);
     }
@@ -59,7 +60,7 @@ window.onload=function(){
         <br>
         <br>
         <br>
-        <a target="_blank" href ="locku.html"><button class="btn-7">一键生成论文</button></a>
+        <a  name="lockName" target="_blank" href ="locku.html"><button class="btn-7">一键生成论文</button></a>
     </div>
 </div>
 
